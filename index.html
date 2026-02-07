@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<header>
+    <nav id="navbar" class="container-fluid">
+        <nav class="navbar-header">
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#content">Contact</a></li>
+            </ul>
+        </nav>
+    </nav>
+</header>
+
+<body>
+    <section class="Section-Home" id="home">
+
+        <div class="Background-Home">
+            <div class="Profile-Image">
+                <img src="images/profile.png" alt="Profile Image">
+            </div>
+            <div class="Container-Info">
+                <div class="Profile-Info">
+                    <h1>Maria Christina Tan Castillejo</h1>
+                    <p>Bachelor of Science in Information Technology</p>
+                    <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_Blank">
+                        1-230312@asiatech.edu.ph</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="Section-About" id="about">
+        <div class="Background-About">
+            <div class="Container-About">
+                <div class="About-Info">
+                    <h1>About Me</h1>
+                    <p>Hi! I'm Maria Christina Castillejo, a passionate and dedicated individual with a strong
+                        background in Information Technology.
+                        I am currently pursuing Bachelor of Science in Information Technology, where I have developed
+                        a solid foundation in various IT concepts and technologies.
+                        I am eager to apply my knowledge and skills in real-world scenarios, and I am always looking for
+                        opportunities to learn and grow in the field of IT.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="Section-Skills" id="skills">
+        <div class="Background-Skills">
+            <div class="Container-Skills">
+                <div class="Skills-Info">
+                    <h1>Skills</h1>
+                    <ul>
+                        <li>Programming Languages: Java, Python, C++</li>
+                        <li>Web Development: HTML, CSS, JavaScript</li>
+                        <li>Database Management: MySQL, MongoDB</li>
+                        <li>Operating Systems: Windows, Linux</li>
+                        <li>Version Control: Git</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 4</div>
+                <img src="images/pos3.png" style="width:100%">
+                <div class="text">Caption Text</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 4</div>
+                <img src="images/pos5.png" style="width:100%">
+                <div class="text">Caption Two</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 4</div>
+                <img src="images/pos2.png" style="width:100%">
+                <div class="text">Caption Three</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div>
+                <img src="images/pos4.png" style="width:100%">
+                <div class="text">Caption Three</div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+    </section>
+
+    <section class="Section-Contact" id="content">
+        <div class="Background-Contact">
+            <div class="Container-Contact">
+                <div class="Contact-Info">
+                    <h1>Contact Me</h1>
+                    <p>If you have any questions or would like to get in touch, feel free to reach out to me in the
+                        following ways:</p>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2024 Maria Christina Castillejo. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="javascript.js"></script>
+
+</html>

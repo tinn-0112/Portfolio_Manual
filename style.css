@@ -1,0 +1,359 @@
+html {
+    scroll-behavior: smooth;
+    max-width: 100%;
+    max-height: fit-content;
+}
+
+header {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    justify-content: flex-end;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: top 0.5s;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+}
+
+.container-fluid {
+    background-color: #0C2C55;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 5rem;
+    margin-right: 0;
+    box-shadow: 0 3px 7px rgba(1, 2, 1, 1);
+    opacity: 90%;
+    width: 100%;
+    transition: top 0.3s;
+
+}
+
+.Container-fluid .transition {
+    transition: background-color 0.5s ease;
+}
+
+ul li a {
+    display: block;
+    color: #EDEDCE;
+    text-align: center;
+    padding: 5px 5px;
+}
+
+ul li a:hover {
+    border-start-end-radius: 10px;
+    border-style: solid;
+    border-color: #EDEDCE;
+    background-color: #0C2C55;
+    color: #EDEDCE;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin-top: 15px;
+    padding: 0;
+    display: flex;
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    color: #EDEDCE;
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: color 0.5s ease;
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.Profile-Image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    margin-top: 150px;
+}
+
+.Container-Info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: -210px;
+    margin-right: 0px;
+
+}
+
+.Profile-Info {
+    color: #0C2C55;
+    font-size: 24px;
+    font-weight: 500px;
+    justify-content: center;
+
+}
+
+.Profile-Info h1 {
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.Profile_Info a {
+    color: #0C2C55;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-right: 200px;
+}
+
+.Container-About {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 200px;
+    margin-left: 0%;
+    margin-right: 0;
+    border-style: hidden;
+    box-shadow: 0 0px 1px rgba(0, 0, 0, 1);
+}
+
+.About-Info {
+    color: #0C2C55;
+    font-size: 20px;
+    font-weight: 500px;
+    justify-content: center;
+    margin-top: 20px;
+    margin-right: 100px;
+    text-align: justify;
+    margin-left: 60px;
+}
+
+.About-Info h1 {
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.About-Info p {
+    line-height: 1.6;
+    margin-left: 20px;
+}
+
+.Container-Skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 70px;
+    margin-left: 0;
+    margin-right: 0;
+    border-style: hidden;
+    box-shadow: 0 0px 1px rgba(0, 0, 0, 1);
+}
+
+.Skills-Info {
+    color: #0C2C55;
+    font-size: 20px;
+    font-weight: 500px;
+    justify-content: flex-start;
+    margin-top: 20px;
+    margin-right: 100px;
+    text-align: justify;
+    margin-left: -550px;
+}
+
+
+.Skills-Info h1 {
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 100px;
+}
+
+.Skills-Info p {
+    line-height: 1.6;
+    margin-left: 20px;
+}
+
+* {
+    box-sizing: border-box
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    max-block-size: fit-content;
+    position: relative;
+    margin: auto;
+    margin-top: 50px;
+    border-style: groove;
+    box-shadow: 0 1px 5px rgba(1, 2, 1, 0.5);
+
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: block;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 10s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 4
+    }
+
+    to {
+        opacity: 4
+    }
+}
+
+.Container-Contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 80px;
+    margin-right: 80px;
+    border-style: hidden;
+    box-shadow: 0 1px 5px rgba(1, 2, 1, 0.5);
+}
+
+.Contact-Info {
+    color: #0C2C55;
+    font-size: 20px;
+    font-weight: 500px;
+    justify-content: flex-start;
+    margin-top: 20px;
+    margin-right: 100px;
+    text-align: justify;
+    margin-left: -50px;
+}
+
+.Contact-Info h1 {
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 100px;
+}
+
+.Contact-Info p {
+    line-height: 1.6;
+    margin-left: 20px;
+}
+
+
+
+
+
+
+
+footer {
+    margin-top: 700px;
+    background-color: #0C2C55;
+    color: #EDEDCE;
+    text-align: center;
+    padding: 20px 1px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
